@@ -6,7 +6,7 @@
 * 
 *  Name: Patel Aditya Dharmesh Student ID: 143595205 Date: 12-20-2022
 *
-*  Vercel App (Deployed) Link: _____________________________________________________
+*  Vercel App (Deployed) Link: https://web-422-a06.vercel.app/
 *
 ********************************************************************************/ 
 
@@ -17,6 +17,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 const userService = require("./user-service.js");
 const jwt = require('jsonwebtoken');
+const passport = require('passport');
+const passportJWT = require('passport-jwt');
 
 // JSON Web Token Setup
 let ExtractJwt = passportJWT.ExtractJwt;
